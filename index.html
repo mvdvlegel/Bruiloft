@@ -1,57 +1,91 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Onze Bruiloft</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap');
+
     body {
-      background-color: #f2e6d3;
-      font-family: 'Segoe UI', sans-serif;
-      color: #5e6846;
+      background-color: #faf8f4; /* heel lichte crème */
+      font-family: 'Montserrat', sans-serif;
+      color: #3a4a36; /* zachte donkergroen */
       text-align: center;
       padding: 2rem;
       margin: 0;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-blend-mode: lighten;
     }
 
     h1 {
-      color: #c6785d;
-      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      color: #7a5a44; /* warm aardetint */
+      font-size: 3rem;
       margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(122, 90, 68, 0.4);
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       max-width: 600px;
-      margin: auto;
+      margin: 0 auto 1rem;
       white-space: pre-line;
+      line-height: 1.6;
+      letter-spacing: 0.03em;
+      font-weight: 500;
+      color: #4a5a3a;
     }
 
     .kaart {
-      background-color: #ffffff;
-      border: 2px solid #c6785d;
-      padding: 2rem;
+      background-color: rgba(233, 245, 225, 0.85); /* semi-transparant lichtgroen */
+      border: 3px solid #a18f6d; /* zachte beige */
+      padding: 2.5rem 3rem;
       margin: 2rem auto;
-      border-radius: 12px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       max-width: 700px;
       width: 90%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kaart::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 150px;
+      height: 150px;
+      background: url('https://cdn-icons-png.flaticon.com/512/616/616408.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.1;
+      transform: rotate(25deg);
+      pointer-events: none;
+      z-index: 0;
     }
 
     .foto {
       width: 100%;
       max-width: 300px;
       height: auto;
-      border-radius: 12px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+      border: 4px solid #d6c9b8;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
 
   <div class="kaart">
-    <img src="foto.jpg" alt="Wij samen" class="foto">
+    <img src="foto.JPG" alt="Wij samen" class="foto" />
     <h1>Bruiloft Silvienne en Marjolein!</h1>
     <p>
       Wat ontzettend fijn dat je deze bijzondere dag met ons wilt vieren!
