@@ -8,9 +8,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap');
 
     body {
-      background-color: #f2e6d3; /* zachte crème */
+      background-color: #deddcb; /* nieuwe zachte achtergrond */
       font-family: 'Montserrat', sans-serif;
-      color: #5e6846; /* donkergroen */
+      color: #7b8375; /* nieuwe zachte grijsgroene tekst */
       text-align: center;
       padding: 2rem;
       margin: 0;
@@ -18,9 +18,15 @@
 
     h1 {
       font-family: 'Playfair Display', serif;
-      color: #c6785d; /* warm roze */
+      color: #7b8375; /*zelfde kleur voor titel*/
       font-size: 3rem;
       margin-bottom: 1rem;
+      transition: color 0.3s ease;
+      cursor: default;
+    }
+
+    h1:hover {
+      color: #c6785d; /* warm roze accent bij hover */
     }
 
     p {
@@ -31,7 +37,7 @@
       line-height: 1.6;
       letter-spacing: 0.03em;
       font-weight: 500;
-      color: #5e6846;
+      color: #7b8375;
     }
 
     .kaart {
@@ -40,7 +46,7 @@
       padding: 2.5rem 3rem;
       margin: 2rem auto;
       border-radius: 20px;
-      box-shadow: 0 8px 15px rgba(94, 104, 70, 0.3);
+      box-shadow: 0 8px 15px rgba(123, 131, 117, 0.3);
       max-width: 700px;
       width: 90%;
     }
@@ -51,7 +57,7 @@
       height: auto;
       border-radius: 20px;
       margin-bottom: 2rem;
-      box-shadow: 0 8px 15px rgba(94, 104, 70, 0.2);
+      box-shadow: 0 8px 15px rgba(123, 131, 117, 0.2);
       border: 4px solid #e6c05e; /* accent geel */
       object-fit: cover;
     }
